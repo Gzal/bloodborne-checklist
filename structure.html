@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Bloodborne Collectible Checklist</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <body>
+        <nav>
+            <ul>
+                <li><a href="About/About.html">About</a></li>
+            </ul>
+        </nav>
+        
+        <h1>Bloodborne <br>Collectible Checklist</h1>
+        <img src="Hunter-Oath-128x128.png" id="hunter-oath" width="128px" height="128px">
+        
+        <button onclick="Save()">SAVE</button>
+        <button onclick="Load()">LOAD</button>
+        <br>
+        
+        <div id="Central-Yharnam">
+            <h2>Central Yharnam</h2>
+            <input type="checkbox" class="Visibility-Button" id="Central-Yharnam-Visibility-Button" checked="true" onclick="CollapseOrExpand('Central-Yharnam-Visibility-Button','Central-Yharnam')">
+            <!--<h2>Central Yharnam</h2>
+            <input type="checkbox" class="Visibility-Button" id="Central-Yharnam-Visibility-Button" checked="true" onclick="CollapseOrExpand(this)">-->
+            
+            <div>
+                <h3><img src="Lamp-32x32.png">Hunter's Dream</h3>
+                <div class="checklist">
+                <input type="checkbox" id="Notebook"><label for="Notebook">
+                    <a href="http://www.bloodborne-wiki.com/2015/03/notebook.html" target="_blank">
+                        <img src="Notebook-42x42.png" width="16px" height="16px">Notebook</a></label><br>
+                </div>
+                <h3>1st Floor Sickroom</h3>
+                <div class="checklist">
+                    <input type="checkbox" id="IBV"><label for="IBV">Iosefka's Blood Vial</label><br>
+                </div>
+                <h3>Central Yharnam</h3>
+                <div class="checklist">
+                    <input type="checkbox" id="Torch"><label for="Torch">Torch</label><br>
+                    <input type="checkbox" id="Hunter Set"><label for="Hunter Set">Hunter Set</label><br>
+                </div>
+                <h3>Hunter's Dream</h3>
+                <div class="checklist">
+                    <input type="checkbox" id="Beckoning Bell"><label for="Beckoning Bell">Beckoning Bell</label><br>
+                    <input type="checkbox" id="Silencing Blank"><label for="Silencing Blank">Silencing Blank</label><br>
+                    <input type="checkbox" id="Old Hunter Bell"><label for="Old Hunter Bell"><s>Old Hunter Bell</s></label><br>
+                </div>
+                <h3>Central Yharnam</h3>
+                <div class="checklist">
+                    <input type="checkbox" id="Shake of Cape"><label for="Shake of Cape">Shake of Cape | Talk | Eileen</label><br>
+                    <input type="checkbox" id="Saw Spear"><label for="Saw Spear">Saw Spear</label><br>
+                    <input type="checkbox" id="Formless Oedon I #1"><label for="Formless Oedon I #1">Formless Oedon I #1 | Find Girl's Mother | Young Yharnam Girl</label><br>
+                    <input type="checkbox" id="Saw Hunter Badge"><label for="Saw Hunter Badge">Saw Hunter Badge</label><br>
+                </div>
+                <h3>Tomb of Oedon</h3>
+                <div class="checklist">
+                    <input type="checkbox" id="Red Jeweled Brooch"><label for="Red Jeweled Brooch">Red Jeweled Brooch</label><br>
+                    <input type="checkbox" id="Blood Gem Workshop Tool"><label for="Blood Gem Workshop Tool">Blood Gem Workshop Tool | Chest</label><br>
+                </div>
+                <h3>Central Yharnam</h3>
+                <div class="checklist">
+                    <input type="checkbox" id="Formless Oedon I #2"><label for="Formless Oedon I #2">Formless Oedon I #2 | Do Not Give & Tell of Iosefka's Clinic | Young Yharnam Girl</label><br>
+                    <input type="checkbox" id="SHB"><label for="SHB">Sword Hunter Badge | Defeat | Cleric Beast</label><br>
+                </div>
+            </div>
+        </div>
+        
+        <br>
+        
+        <div id="Cathedral-Ward-I">
+            <h2>Cathedral Ward I</h2>
+            <input type="checkbox" id="Cathedral-Ward-I-Visibility-Button" checked="true" onclick="CollapseOrExpand('Cathedral-Ward-I-Visibility-Button','Cathedral-Ward-I')">
+
+            <div>
+                <h3>Cathedral Ward</h3>
+                <div class="checklist">
+                    <input type="checkbox"><label>Nothing | Talk | Chapel Dweller</label><br>
+                    <input type="checkbox"><label>Triumph #1 | Tell of Oedon Chapel | Lonely Old Dear</label><br>
+                    <input type="checkbox"><label>Triumph #2 | Talk | Oedon Chapel Dweller</label><br>
+                    <input type="checkbox"><label>Wooden Shield</label><br>
+                    <input type="checkbox"><label>Hunter Set</label><br>
+                    <input type="checkbox"><label>Monocular</label><br>
+                    <input type="checkbox"><label>Pray | Co-operate | Alfred, Hunter of Vilebloods</label><br>
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <div id="Old-Yharnam">
+            <h2>Old Yharnam</h2>
+            <input type="checkbox" id="Old-Yharnam-Visibility-Button" checked="true" onclick="CollapseOrExpand('Old-Yharnam-Visibility-Button','Old-Yharnam')">
+            <div>
+                <h3>Old Yharnam</h3>
+                <div class="checklist">
+                    <input type="checkbox"><label>Hunter's Torch</label><br>
+                    <input type="checkbox"><label class="lost-upon-NG-plus">Bloody Messenger Head Bandage</label><br>
+                    <input type="checkbox"><label>Rifle Spear</label><br>
+                    <input type="checkbox"><label>Charred Hunter Set</label><br>
+                    <input type="checkbox"><label>Pthumeru Chalice | Defeat | Blood-Starved Beast</label><br>
+                </div>
+            </div>
+        </div>
+        
+        <br>
+        
+        <div id="Healing-Church-Workshop">
+            <h2>Healing Church Workshop</h2>
+            <input type="checkbox" id="Healing-Church-Workshop-Visibility-Button" checked="true" onclick="CollapseOrExpand('Healing-Church-Workshop-Visibility-Button','Healing-Church-Workshop')">
+            <div>
+                <h3>Cathedral Ward</h3>
+                <div class="checklist">
+                    <input type="checkbox"><label>Formless Oedon IV | Chest</label><br>
+                    <input type="checkbox"><label class="lost-upon-NG-plus">Messenger Urn Festival</label><br>
+                    <input type="checkbox"><label>Communion I | Chest</label><br>
+                    <input type="checkbox"><label>Radiant Sword Hunter Badge</label><br>
+                    <input type="checkbox"><label class="lost-upon-NG-plus">Messenger Top Hat</label><br>
+                </div>
+                <h3>Abandoned Old Workshop</h3>
+                <div class="checklist">
+                    <input type="checkbox"><label>Doll Set</label><br>
+                    <input type="checkbox"><label>Old Hunter Bone</label><br>
+                    <input type="checkbox"><label>Third Umbilical Cord #1</label><br>
+                    <input type="checkbox"><label>Small Hair Ornament</label><br>
+                    <input type="checkbox"><label>Beast I | Defeat | Beast-Possessed Soul</label><br>
+                    <input type="checkbox"><label>Rumpled Set</label><br>
+                </div>
+                <h3>Cathedral Ward</h3>
+                <div class="checklist">
+                    <input type="checkbox" class="lost-upon-NG-plus"><label>Black Messenger Hat</label>
+                </div>
+                <h3>Hunter's Dream</h3>
+                <div class="checklist">
+                    <input type="checkbox"><label>Tear Stone | Give Small Hair Ornament | Doll</label>
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <div id="Cathedral-Ward-II">
+            <h2>Cathedral Ward II</h2>
+            <input type="checkbox" id="Cathedral-Ward-II-Visibility-Button" checked="true" onclick="CollapseOrExpand('Cathedral-Ward-II-Visibility-Button','Cathedral-Ward-II')">
+            <div>
+                <h3>Cathedral Ward</h3>
+                <div class="checklist">
+                    <input type="checkbox"><label>Shh! | Talk | Eileen the Crow</label><br>
+                    <input type="checkbox"><label>Heir I | Defeat | Old Hunter Henryk</label><br>
+                    <input type="checkbox"><label>Approval | Talk | Eileen the Crow</label><br>
+                    <input type="checkbox"><label>Third Umbilical Cord #1 | Tell of Oedon Chapel | Arianna, Woman of Pleasure</label><br>
+                    <input type="checkbox"><label>Black Church Set</label><br>
+                    <input type="checkbox"><label>Curtsy | Talk | Arianna, Woman of Pleasure</label><br>
+                </div>
+            </div>
+        </div>
+        
+        <br>
+        
+        <div id="Hemwick-Charnel-Lane">
+            <h2>Hemwick Charnel Lane</h2>
+            <input type="checkbox" id="Hemwick-Charnel-Lane-Visibility-Button" checked="true" onclick="CollapseOrExpand('Hemwick-Charnel-Lane-Visibility-Button','Hemwick-Charnel-Lane')">
+            <div>
+                <h3>Hemwick Charnel Lane</h3>
+                    <div class="checklist">
+                        <input type="checkbox"><label>Lake I</label><br>
+                    </div>
+                <h3>Witch's Abode</h3>
+                    <div class="checklist">
+                        <input type="checkbox"><label>Rune Workshop Tool</label><br>
+                    </div>
+            </div>
+        </div>
+        
+        <br>
+        
+        <div id="Cathedral-Ward-III">
+            <h2>Cathedral Ward III</h2>
+            <input type="checkbox" id="Cathedral-Ward-III-Visibility-Button" checked="true" onclick="CollapseOrExpand('Cathedral-Ward-III-Visibility-Button', 'Cathedral-Ward-III')">
+            <div>
+                <h3>Cathedral Ward</h3>
+                    <div class="checklist">
+                        <input type="checkbox"><label>Gold Pendant | Defeat | Vicar Amelia</label><br>
+                    </div>
+            </div>
+        </div>
+        
+        <h1>Checkpoint! Interact with Laurence's Skull</h1>
+        
+        <div>
+            <h3>Hunter's Dream</h3>
+            <div class="checklist">
+                <input type="checkbox"><label>Eye of a Blood-Drunk Hunter</label><br>
+            </div>
+        </div>
+        
+        <div>
+            <h2>Forbidden Woods</h2>
+            <h3>Forbidden Woods</h3>
+            <div class="checklist">
+                <input type="checkbox"><label>White Church Set</label><br>
+                <input type="checkbox"><label>Beast Roar</label><br>
+            </div>
+            <h3>Iosefka's Clinic</h3>
+            <div class="checklist">
+                <input type="checkbox"><label>Formless Oedon I | Defeat | Celestial Emissary</label><br>
+                <input type="checkbox"><label>Communion III | Chest</label><br>
+                <input type="checkbox"><label>Oedon Writhe II | Defeat | Impostor Iosefka</label><br>
+            </div>
+            <h3>Forbidden Woods</h3>
+            <div class="checklist">
+                <input type="checkbox"><label>Beast II #1 | Tell of Oedon Chapel | Afflicted Beggar</label><br>
+                <input type="checkbox"><label>Cannon</label><br>
+                <input type="checkbox"><label>Impurity | Join the League | Valtr, Master of the League</label><br>
+                <input type="checkbox"><label>One-Eyed Iron Helm | Defeat | Valtr, Master of the League</label><br>
+                <input type="checkbox"><label>Madara's Whistle | Defeat | Younger Madaras Twin</label><br>
+                <input type="checkbox"><label>Deep Sea II</label><br>
+                <input type="checkbox"><label>Clear Deep Sea I</label><br>
+                <input type="checkbox"><label>Graveguard Mask</label><br>
+                <input type="checkbox"><label>Graveguard Set</label><br>
+                <input type="checkbox"><label>Anti-Clockwise Metamorphosis I</label><br>
+                <input type="checkbox"><label>Dissipating Lake I</label><br>
+                <input type="checkbox"><label>Clockwise Metamorphosis</label><br>
+                <input type="checkbox"><label>Blood Rapture I | Defeat | Shadows of Yharnam</label><br>
+            </div>
+        </div>
+            
+        <div>
+            <h2>Hypogean Gaol</h2>
+            <h3>Hypogean Gaol</h3>
+            <div class="checklist">
+                <input type="checkbox"><label>Oedon Writhe I #1 | Equip Black Church Set & Tell of Oedon Chapel | Adella, Nun of the Healing Church</label><br>
+                <input type="checkbox"><label>Moon I</label><br>
+                <input type="checkbox"><label>Yahar'gul Set</label><br>
+                <input type="checkbox"><label>Spark Hunter Badge | Kill Darkbeast Paarl</label><br>
+            </div>
+            <h3>Graveyard of the Darkbeast</h3>
+            <div class="checklist">
+                <input type="checkbox"><label>Powder Keg Hunter Badge & Brush Off Dust | Spare beasts of Old Yharnam | Retired Hunter Djura</label><br>
+                <input type="checkbox"><label>Ashen Hunter Set (Insight Shop) | Kill | Retired Hunter Djura</label><br>
+            </div>
+            <h3>Cathedral Ward</h3>
+            <div class="checklist">
+                <input type="checkbox"><label>Church Bow (Female) | Talk | Adella, Nun of the Healing Church</label>
+            </div>
+        </div>
+        
+        <div>
+            <h2>Nightmare Frontier</h2>
+            <h3>Lecture Building - First Floor</h3>
+            <div class="checklist">
+                <input type="checkbox"><label>Student Set</label><br>
+                <input type="checkbox"><label>Augur of Ebrietas | Chest</label>
+            </div>
+            <h3>Nightmare Frontier</h3>
+            <div class="checklist">
+                <input type="checkbox"><label>Clockwise Metamorphosis II</label><br>
+                <input type="checkbox"><label>Stunning Deep Sea II</label><br>
+                <input type="checkbox"><label>Fading Lake I</label><br>
+                <input type="checkbox"><label>Clear Deep Sea II</label><br>
+                <input type="checkbox"><label>Great Deep Sea II</label><br>
+                <input type="checkbox" class="lost-upon-NG-plus"><label>Messenger's Gift</label><br>
+                <input type="checkbox"><label>Ailing Loran Chalice | Defeat | Amygdala</label><br>
+            </div>
+        </div>
+        
+        <div>
+            <h3>Cathedral Ward - Oedon Chapel</h3>
+            <div class="checklist">
+                <input type="checkbox"><label>Oedon Writhe I</label><br>
+                <input type="checkbox"><label>Formless Oedon III</label><br>
+                <input type="checkbox"><label>Beast II | Kill | Afflicted Beggar</label><br>
+            </div>
+        </div>
+        
+        <div>
+            <h2>Byrgenwerth</h2>
+            <h3>Byrgenwerth</h3>
+            <div class="checklist">
+                <input type="checkbox"><label>Arcane Lake II</label><br>
+                <input type="checkbox"><label>Student Set | Chest</label><br>
+                <input type="checkbox"><label>Empty Phantasm Shell | Chest</label><br>
+                <input type="checkbox"><label>Eye II | Defeat | Master Willem</label><br>
+            </div>
+        </div>
+        
+        <h1>Checkpoint ! Approach Yharnam, Pthumerian Queen</h1>
+        
+        <div>
+            <h2>Forsaken Castle Cainhurst</h2>
+            <h3>Forsaken Castle Cainhurst</h3>
+            <div class="checklist">
+                <input type="checkbox"><label>Reiterpallasch | Chest</label><br>
+                <input type="checkbox"><label>Noble Dress | Chest</label><br>
+                <input type="checkbox"><label>Executioner Set</label><br>
+                <input type="checkbox"><label>Vileblood Register</label><br>
+                <input type="checkbox"><label>Evelyn | Chest</label><br>
+                <input type="checkbox"><label>Executioner's Gloves | Chest</label><br>
+                <input type="checkbox"><label>Knight's Set | Chest</label><br>
+                <input type="checkbox"><label>Knight's Wig</label><br>
+                <input type="checkbox"><label>Crown of Illusions | KIll | Martyr Logarius</label><br>
+            </div>
+            <h3>Vileblood Queen's Chamber</h3>
+            <div class="checklist">
+                <input type="checkbox"><label>Corruption & Cainhurst Badge | Swear Oath to the Vilebloods | Annalise, Queen of the Vilebloods</label><br>
+                <p>Note: Equip Corruption Oath Rune</p><br>
+                <input type="checkbox"><label>Unopened Summons</label><br>
+            </div>
+            <h3>Cathedral Ward</h3>
+            <div class="checklist">
+                <input type="checkbox"><label>Wheel Hunter Badge & Church Bow (Male) | Give Unopened Summons | Alfred, Hunter of Vilebloods</label><br>
+            </div>
+            <h3>Vileblood Queen's Chamber</h3>
+            <div class="checklist">
+                <input type="checkbox"><label>Roar | Talk | Alfred, Hunter of Vilebloods</label><br>
+            </div>
+            <h3>Cathedral Ward</h3>
+            <div class="checklist">
+                <input type="checkbox"><label>Radiance</label><br>
+            </div>
+        </div>
+        
+        <div>
+            <h2>Yahar'gul Unseen Village</h2>
+            <h3>Yahar'gul Unseen Village</h3>
+            <div class="checklist">
+                <input type="checkbox"><label>Iron Yahar'gul Helm</label><br>
+                <input type="checkbox"><label>Heir II</label><br>
+                <input type="checkbox"><label>Tiny Tonitrus | Chest</label><br>
+            </div>
+            <h3>Yahar'gul Chapel</h3>
+            <div class="checklist">
+                <input type="checkbox"><label>Clawmark I | Defeat | Yahar'gul Hunter</label><br>
+                <input type="checkbox"><label>Arcane Lake I</label><br>
+            </div>
+            <h3>Central Yharnam</h3>
+            <div class="checklist">
+                <input type="checkbox"><label>Clawmark II | Defeat | Gilbert, Critically Ill Man</label><br>
+            </div>
+        </div>
+        
+        <div>
+            <h2>Upper Cathedral Ward</h2>
+            <h3>Upper Cathedral Ward</h3>
+            <div class="checklist">
+                <input type="checkbox"><label>Great Lake II</label><br>
+                <input type="checkbox"><label>Choir Set</label><br>
+                <input type="checkbox"><label>Blindfold Cap</label><br>
+                <input type="checkbox"><label>Make Contact</label><br>
+                <input type="checkbox"><label>Cosmic Eye Watcher Badge</label><br>
+                <input type="checkbox"><label>Communion IV | Defeat | Celestial Emissary</label><br>
+            </div>
+            <h3>Lumenflower Gardens</h3>
+            <div class="checklist">
+                <input type="checkbox"><label>A Call Beyond</label><br>
+                <input type="checkbox"><label>Great Isz Chalice | Defeat | Ebrietas, Daughter of the Cosmos</label><br>
+            </div>
+            <h3>Vileblood Queen's Chamber</h3>
+            <div class="checklist">
+                <input type="checkbox"><label>Deep Respect | Offer Blood Dreg | Annalise, Queen of the Vilebloods</label><br>
+            </div>
+        </div>
+        
+        <div>
+            <h2>Nightmare of Mensis</h2>
+            <h3>Lecture Building 2nd Floor</h3>
+            <div class="checklist">
+                <input type="checkbox"><label>Beg for Life | Not at All | Patches the Spider</label><br>
+                <input type="checkbox"><label>Anti-Clockwise Metamorphosis II | Talk | Patches the Spider</label><br>
+                <input type="checkbox"><label>Communion | Chest</label><br>
+            </div>
+            <h3>Mergo's Loft - Base</h3>
+            <div class="checklist">
+                <input type="checkbox"><label>Eye I</label><br>
+                <input type="checkbox"><label>Iron Door Key</label><br>
+                <input type="checkbox"><label>Moon II</label><br>
+                <input type="checkbox"><label>Mensis Cage</label><br>
+            </div>
+            <h3>Cathedral Ward</h3>
+            <div class="checklist">    
+                <input type="checkbox"><label>Arianna's Shoes | Defeat | Arianna, Woman of Pleasure</label><br>
+                <input type="checkbox"><label>Third Umbilical Cord | Defeat | Celestial Child</label><br>
+            </div>
+            <h3>Mergo's Loft - Middle</h3>
+            <div class="checklist">
+                <input type="checkbox"><label>Choir Bell | Chest</label><br>
+                <input type="checkbox"><label>Blood Rock</label><br>
+                <input type="checkbox"><label>Moon III | Make Contact | Brain of Mensis</label><br>
+                <input type="checkbox"><label>Third Umbilical Cord | Defeat | Mergo's Wet Nurse</label><br>
+            </div>
+            <h3>Grand Cathedral</h3>
+            <div class="checklist">
+                <input type="checkbox"><label>Wait | Talk | Eileen the Crow</label><br>
+                <input type="checkbox"><label>Blood Rapture III | Defeat | Bloody Crow of Cainhurst</label><br>
+                <input type="checkbox"><label>Hunter & Crow Hunter Badge | Talk | Eileen</label><br>
+            </div>
+        </div>
+        
+        <div>
+            <h2>Hunter's Dream</h2>
+            <h3>Hunter's Dream</h3>
+            <input type="checkbox"><label>Old Hunter Badge | Defeat | Gehrman, The First Hunter</label><br>
+        </div>
+        <script src="script.js"></script>
+    </body>
+
+</html>

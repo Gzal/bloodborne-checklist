@@ -1,0 +1,53 @@
+nav {
+    text-align: center;
+}
+
+body {
+    background-image: url(Hunter-in-Yharnam-Cover.jpg);
+    background-size: 100vw;
+    background-position: top;
+    padding-left: 5px;
+}
+
+h1 {
+    color: darkblue;
+    text-align: center;
+}
+
+#hunter-oath {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+h2 {
+    color: darkblue;
+    background-color: slategray;
+    width: 300px;
+    padding-left: 5px;
+    display: inline;
+}
+
+h3 {
+    color:silver;
+}
+
+p {
+    background-color: darkgrey;
+    display: inline-block;
+}
+input {
+    background-color: darkgrey;
+}
+
+label {
+    background-color: darkgrey;
+}
+
+.checklist {
+    margin-left:20px;
+}
+
+
+.lost-upon-NG-plus {
+    text-decoration: line-through;
+}
