@@ -17,14 +17,23 @@ function Load() {
     }
 }
 
-function CollapseOrExpand(buttonId, sectionId) {
-    var visibilityButton = document.getElementById(buttonId);
-    var sectionElements = document.getElementById(sectionId).getElementsByTagName("div");
+function CollapseOrExpand(button) {
+    var visibilityButton = button;
+    var section = visibilityButton.parentElement;
+    var sectionElements = section.childNodes;
     var i = 0;
+
     if (visibilityButton.checked == true)
-        for (i; i < sectionElements.length; i++)
-            sectionElements[0].style.display = 'block';
-    else if (visibilityButton.checked == false)
-        for (i; i < sectionElements.length; i++)
-            sectionElements[0].style.display = 'none';
+        for (i; i < sectionElements.length;i++) {
+            if (sectionElements[i].tagName == "DIV") {
+                sectionElements[i].style.display = 'block';
+            }
+        }
+    else if (visibilityButton.checked == false) {
+        for (i; i < sectionElements.length; i++) {
+            if (sectionElements[i].tagName == "DIV") {
+                sectionElements[i].style.display = 'none';
+            }
+        }
+    }
 }
