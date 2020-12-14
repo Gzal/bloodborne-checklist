@@ -9,7 +9,7 @@ function Save() {
 
 function CollapseOrExpand(button) {
     "use strict";
-    var visibilityButton = button, section = visibilityButton.parentElement, sectionElements = section.childNodes, i;
+    var visibilityButton = button, section = visibilityButton.parentElement, sectionElements = section.childNodes, i = 0;
 
     if (visibilityButton.checked === true) {
         for (i; i < sectionElements.length; i += 1) {
